@@ -26,6 +26,7 @@ function App() {
             <button onClick={()=> firstInteger === "0" ? setFirstInteger("0") : setFirstInteger(firstInteger+"0")}>0</button>
             <button onClick={()=> setFirstInteger("0")}>Clear</button>
             <button onClick={()=> setFirstInteger(store)}>recall</button>
+            <button onClick={()=> firstInteger.includes(".") ? firstInteger : setFirstInteger(firstInteger+".")}>.</button>
           </div>
         </div>
         
@@ -54,6 +55,7 @@ function App() {
             <button onClick={()=> secondInteger === "0" ? setSecondInteger("0") : setSecondInteger(secondInteger+"0")}>0</button>
             <button onClick={()=> setSecondInteger("0")}>Clear</button>
             <button onClick={()=> setSecondInteger(store)}>recall</button>
+            <button onClick={()=> secondInteger.includes(".") ? secondInteger : setSecondInteger(secondInteger+".")}>.</button>
           </div>
         </div>
 
